@@ -1,0 +1,20 @@
+<!-- <a href="#" -->
+<a
+style="cursor: pointer;"
+[routerLink]="[index]" 
+routerLinkActive = "active"
+class="list-group-item clearfix "
+>
+ <!-- (click)="onSelected()"> removed here and in recipe-item.component.ts -->
+  <div class="float-left">
+    <h4 class="list-item">{{recipe.name}}</h4>
+    <p class="list-item">{{recipe.description}} </p>
+  </div>
+  <span class="float-right">
+    <img 
+    [src]="recipe.imagePath" 
+    alt="{{recipe.name}}"
+    class="img-responsive"
+    style="max-height: 120px;">
+  </span>
+</a>
